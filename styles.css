@@ -139,16 +139,48 @@ section{
 .sec2{
   background-color: white;
 }
-
-.sec3{
+/***************************************************/
+.hiringWeek{
   background-color: #2D354C;
   color: white;
 }
 
-.sec4{
+.hiringWeek div {
+  width: 40%;
+  display: inline-block;
+}
+
+.hiringWeek .personalInfo img{
+  width: 150px;
+  height: auto;
+  border: 5px solid #2DC5FA;
+  border-radius: 50%;
+}
+
+.hiringWeek .carroussel img {
+  width: 80%;
+  height: auto;
+  
+}
+
+
+/***************************************************/
+.alumni{
   background-color: white;
 }
 
+.successCase {
+  width: 30%;
+  display: inline-block;
+}
+
+.successCase img{
+  width: 150px;
+  height: auto;
+  border: 5px solid #2DC5FA;
+  border-radius: 50%;
+}
+/***************************************************/
 .sec5{
   background-color: #2D354C;
   color: white;
