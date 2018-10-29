@@ -132,13 +132,24 @@ section{
 
 /*numbered sections*/
 
-.sec1{
+/***************************************************/
+.principal{
   background-color: #D3D3D3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.sec2{
-  background-color: white;
+.principal .content {
+  width: 300px;
+  flex-grow: 1;
 }
+
+/***************************************************/
+/* 
+.costos{
+  background-color: white;
+} */
 /***************************************************/
 .hiringWeek{
   background-color: #2D354C;
@@ -167,10 +178,13 @@ section{
 /***************************************************/
 .alumni{
   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .successCase {
   width: 30%;
+  flex-grow: 1;
   display: inline-block;
 }
 
@@ -186,14 +200,105 @@ section{
   color: white;
 }
 
+
+/***************************************************/
+
 .sec6{
   background-color: white;
+  color: #2D354C;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+.sec6 div{
+  width: 40%;
+  flex-wrap: 1;
+  justify-content: flex-start;
 }
 
-.sec7{
-  background-color: #2D354C;
-  color: white;
-}
+@import "compass/css3";
+
+.calendar {
+  width: 40%;
+  flex-grow: 1;
+  justify-content: center;
+  
+  /* min-width: 350px;
+  max-width: 50%; */
+  margin: 1em auto;
+  padding: 1em;
+  
+
+  background: #EEE;
+  font-family: arial, helvetica, san-serif;
+  box-shadow: 0 0 0.1em rgba(0,0,0, 0.5);
+  border-radius: 0.2em;
+  /* .calendar:last-child {
+    border-top: 6px solid red;
+  } */
+} 
+ .calendar h1 { 
+    margin: 0 0 0.4em;
+    font-weight: bold;
+  }
+  .event {
+    color: #333;
+    display: block;
+    padding: 0.1em;
+    transition: all 0.25s ease;
+    margin-bottom: 0.5em;
+    /* &:hover {
+      background: darken($color-grey, 10%);
+      text-decoration: none;
+      color: black;
+    } */
+  }
+  .event_icon {
+    width: 3em;
+    float: left;
+    margin-right: 0.75em;
+  }
+  .event_month, .event_day { 
+    text-align: center;
+  }
+  .event_month {
+    padding: 0.1em;
+    margin-bottom: 0.15em;
+    background: #C00000;
+    font-size: 0.75em;
+    color: white;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+  }
+  .event_day {
+    border: 1px solid #999;
+    background: white;
+    color: black;
+    font-size: 1.25em;
+    font-weight: bold;
+    border-bottom-left-radius: 0.1em;
+    border-bottom-right-radius: 0.1em;
+  }
+  .event_title {
+    font-size: 1.1em;
+    height: 3em;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .calendar .btn { 
+    margin-top: 0.5em;
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+ 
+
+
+/***************************************************/
+
+
+
 
 /*anchor to button*/
 .button{ 
@@ -434,21 +539,22 @@ footer a:hover{
 
 
 /*costos*/
-#costos{
-  background-color: #2D354C;
-  color: #fff;
+.costos{
+  background-color: white;
+  /* background-color: #2D354C; */
+  color: #2D354C;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
-#costos div{
+.costos div{
   width: 30%;
 }
-#costos div:nth-child(2){
+.costos div:nth-child(2){
   font-size: 1.5rem;
 }
-#costos div:nth-child(2) p:nth-child(2){
+.costos div:nth-child(2) p:nth-child(2){
   font-size: 1rem;
 }
 
@@ -594,3 +700,4 @@ footer a:hover{
 section {
   background-color: lightgrey;
 }
+
