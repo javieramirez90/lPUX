@@ -292,7 +292,9 @@ section{
     font-size: 1.5em;
   }
 
- 
+  .calendar .btn-primary { 
+    /* background-color: #2D354C; */
+  }
 
 
 /***************************************************/
